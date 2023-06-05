@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    text-align: center;
+    margin: 32px auto;    
+}
+
+header img{
+    width: 120px;
+    border-radius: 50%;
+    padding: 4px;
+    background-image: linear-gradient(90deg, #DAA520 0%, #D2691E 50.52%, #F4A460 100%); 
+ }
+
+header div:hover{
+    transform: scale(1.3); 
+}
+
+body {
+    background-image: url(/imgs/dwarven-shield.jpg);
+    background-repeat: no-repeat; 
+    background-size: 100%;
+    background-attachment: fixed;
+}
+
+main, footer {
+    max-width: 580px; 
+    width: 90%; 
+    margin: auto;
+    display: grid;
+    gap: 24px;
+    justify-content: center;
+}
+
+ul {
+    list-style: none; 
+}
+
+.botao {
+    width: 120px;
+    border-radius: 10%;
+    padding: 12px;
+    background-image: linear-gradient(90deg, #DAA520 0%, #D2691E 50.52%, #F4A460 100%); 
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover{
+    color: #8B4513;
+}
+
+a img:hover{
+    transform: scale(1.1);
+}
+
+section {
+    color: #FFFFFF; 
+    background-image: linear-gradient(90deg, #DAA520 0%, #D2691E 50.52%, #F4A460 100%);
+    padding-top: 4px;
+    border-radius: 10px;
+    width: 580px;
+}
+
+section div {
+    background-color: #2A2634;
+    padding: 32px;
+    padding-top: 24px;
+    border-radius: 8px;
+}
+
+section ul {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+p span {
+    font-weight: bold;
+}
+
+iframe:hover {
+    transform: scale(1.02);
+}
+
+.fonte-escrita {
+    font-family: 'Dancing Script', cursive;
+}
+
+p {
+    font-size: 20px;
+}
+
+footer p {
+   text-align: center;
+}
+
+.boostes {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows:150px;
+    justify-content: center
+}
+
+table {
+    margin: auto;
+}
+
+table, th, td {
+  padding: 0.5rem 0.5rem;
+}
+
+th, td {
+  border: 3px solid #DAA520;
+}
+
+thead {
+    background-color: #DAA520;
+    color: #e2e8f0;
+    text-align: center;
+}
+
+tr:hover {
+    background-color: #DAA520;
+  }
+
+
