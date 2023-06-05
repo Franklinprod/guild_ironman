@@ -27,10 +27,10 @@ header div:hover{
 
 /* Definindo imagem de fundo e que ela fica sempre fixada, mesmo rolando o scroll do mouse*/
 body {
-        background-image: url(/imgs/dwarven-shield.jpg);
-        background-repeat: no-repeat; 
-        background-size: 100%;
-        background-attachment: fixed;
+    background-image: url(/imgs/dwarven-shield.jpg);
+    background-repeat: no-repeat; 
+    background-size: 100%;
+    background-attachment: fixed;
 }
 
 /* Definindo o tamanho da parte principal e footer e para que fiquem centralizados */
