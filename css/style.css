@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
 }
 
 /*Deixando o cabeçalho centralizado*/
@@ -27,21 +28,28 @@ header div:hover{
 
 /* Definindo imagem de fundo e que ela fica sempre fixada, mesmo rolando o scroll do mouse*/
 body {
-    background-image: url(/imgs/dwarven-shield.jpg);
+    background-image: url(./github.com/Franklinprod/guild-ironman/blob/master/imgs/dwarven-shield.jpg);
     background-repeat: no-repeat; 
     background-size: 100%;
     background-attachment: fixed;
 }
 
-/* Definindo o tamanho da parte principal e footer e para que fiquem centralizados */
-main, footer {
-    max-width: 580px; 
-    width: 90%; 
-    margin: auto;
-    display: grid;
-    gap: 24px;
-    justify-content: center;
+.teste {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
 }
+
+ main, footer {
+    width: 80vw;
+    margin: auto;
+ }
+
+.subtitulos {
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Inter', sans-serif;
+ }
 
 ul {
     list-style: none; 
@@ -74,7 +82,8 @@ section {
     background-image: linear-gradient(90deg, #DAA520 0%, #D2691E 50.52%, #F4A460 100%);
     padding-top: 4px;
     border-radius: 10px;
-    width: 580px;
+    opacity: 0.9;
+    
 }
 
 /*Definindo o o formato das divs dentro das section */
@@ -82,15 +91,23 @@ section div {
     background-color: #2A2634;
     padding: 32px;
     padding-top: 24px;
-    border-radius: 8px;
+    border-radius: 8px;  
+   
 }
 
 /*Fazendo com que a lista fique uma ao lado da outra e centralizada */
 section ul {
     display: flex;
-    gap: 16px;
+    gap: 32px;
     justify-content: center;
     margin-top: 10px;
+}
+.boostes {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: 150px;
+    gap: 12px;
+    justify-content: center;
 }
 
 p span {
@@ -116,12 +133,7 @@ footer p {
 }
 
 /*Deixando a parte dos boostes centralizados e ao lado um do outro*/
-.boostes {
-    display: grid;
-    grid-template-columns: repeat(3, auto);
-    grid-template-rows:150px;
-    justify-content: center
-}
+
 
 table {
     margin: auto;
@@ -146,5 +158,7 @@ thead {
 tr:hover {
     background-color: #DAA520;
   }
+
+
 
 
