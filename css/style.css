@@ -82,8 +82,7 @@ section {
     background-image: linear-gradient(90deg, #DAA520 0%, #D2691E 50.52%, #F4A460 100%);
     padding-top: 4px;
     border-radius: 10px;
-    opacity: 0.9;
-    
+    opacity: 0.9;   
 }
 
 /*Definindo o o formato das divs dentro das section */
@@ -92,7 +91,6 @@ section div {
     padding: 32px;
     padding-top: 24px;
     border-radius: 8px;  
-   
 }
 
 /*Fazendo com que a lista fique uma ao lado da outra e centralizada */
