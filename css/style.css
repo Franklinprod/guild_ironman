@@ -28,7 +28,7 @@ header div:hover{
 
 /* Definindo imagem de fundo e que ela fica sempre fixada, mesmo rolando o scroll do mouse*/
 body {
-    background-image: url(./github.com/Franklinprod/guild-ironman/blob/master/imgs/dwarven-shield.jpg);
+    background-color: rgb(78, 37, 2);
     background-repeat: no-repeat; 
     background-size: 100%;
     background-attachment: fixed;
@@ -40,11 +40,46 @@ body {
     gap: 16px;
 }
 
- main, footer {
+#galeriaflex {
+    display:grid;    
+}
+
+#galeria > div {
+    float:left;
+    width: 33%;
+    padding: 10px;
+}
+
+.foto img{
+    width: 100%;
+    display: block;
+}
+
+#galeria .foto:target {
+    position: fixed;
+    width: 50%;
+    top: 15px;
+    left: 25%;
+    padding: 5px;
+    border: solid 1px orange;
+    box-shadow: 0 0 25px 10px #000;
+    border-radius: 5px;
+}
+
+.foto:target .descricao {
+    display: block;
+}
+
+.descricao {
+    display: none;
+}
+
+main, footer {
     width: 90vw;
     margin: auto;
  }
 
+ 
 .subtitulos {
     text-align: center;
     font-family: 'Dancing Script', cursive;
@@ -54,6 +89,8 @@ body {
 ul {
     list-style: none; 
 }
+
+
 
 /* Deixando o menu no mesmo padrão da imagem do header*/
 .botao {
@@ -71,9 +108,7 @@ a:hover{
     color: #8B4513;
 }
 
-a img:hover{
-    transform: scale(1.1);
-}
+
 
 /*Definindo o background de cada section, fazendo com que a parte de cima se sobressaia e fique mais bonito redonda */
 section {
@@ -86,7 +121,7 @@ section {
 
 .menu {
     height: 100%;
-    width: 100;
+    width: 100%;
 }
 
 /*Definindo o o formato das divs dentro das section */
@@ -96,6 +131,7 @@ section div {
     padding-top: 24px;
     border-radius: 8px;  
 }
+
 
 /*Fazendo com que a lista fique uma ao lado da outra e centralizada */
 section ul {
