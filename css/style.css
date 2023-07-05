@@ -44,6 +44,7 @@ body {
     display:grid;    
 }
 
+/* Configurando a galeria - Ficar uma imagem ao lado da outra, contendo 3 imagens*/
 #galeria > div {
     float:left;
     width: 33%;
@@ -55,6 +56,7 @@ body {
     display: block;
 }
 
+/*Apenas quando clicar na foto, o target dela é mostrar na mesma página*/
 #galeria .foto:target {
     position: fixed;
     width: 50%;
@@ -66,12 +68,14 @@ body {
     border-radius: 5px;
 }
 
-.foto:target .descricao {
-    display: block;
-}
-
+/* Inicia a descrição sem mostrar*/
 .descricao {
     display: none;
+}
+
+/* A descrição é mostrada quando abre o target*/
+.foto:target .descricao {
+    display: block;
 }
 
 main, footer {
@@ -79,8 +83,7 @@ main, footer {
     margin: auto;
  }
 
- 
-.subtitulos {
+ .subtitulos {
     text-align: center;
     font-family: 'Dancing Script', cursive;
     font-family: 'Inter', sans-serif;
@@ -89,8 +92,6 @@ main, footer {
 ul {
     list-style: none; 
 }
-
-
 
 /* Deixando o menu no mesmo padrão da imagem do header*/
 .botao {
@@ -107,8 +108,6 @@ a {
 a:hover{
     color: #8B4513;
 }
-
-
 
 /*Definindo o background de cada section, fazendo com que a parte de cima se sobressaia e fique mais bonito redonda */
 section {
@@ -226,7 +225,7 @@ tr:hover {
         background-image: linear-gradient(90deg, #DAA520 0%, #D2691E 50.52%, #F4A460 100%); 
     }
     
-  }
+}
 
 
 
