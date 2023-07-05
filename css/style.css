@@ -66,6 +66,7 @@ body {
     border: solid 1px orange;
     box-shadow: 0 0 25px 10px #000;
     border-radius: 5px;
+    z-index: 1;
 }
 
 /* Inicia a descrição sem mostrar*/
@@ -139,13 +140,7 @@ section ul {
     justify-content: center;
     margin-top: 10px;
 }
-.boostes {
-    display: grid;
-    grid-template-columns: repeat(3, auto);
-    grid-template-rows: 100%;
-    gap: 12px;
-    justify-content: center;
-}
+
 
 .preenchimento {
     padding: 10px;
@@ -179,7 +174,18 @@ footer p {
    text-align: center;
 }
 
+footer {
+    z-index: -1;
+}
+
 /*Deixando a parte dos boostes centralizados e ao lado um do outro*/
+.boostes {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: 100%;
+    gap: 12px;
+    justify-content: center;
+}
 
 
 table {
